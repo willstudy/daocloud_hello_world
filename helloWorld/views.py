@@ -21,5 +21,5 @@ def index(request):
 		'ret_info': json.dumps(retInfo)
 	})
 
-	return render(request, 'index.html', context)
-	#return HttpResponse(json.dumps(retInfo))
+	#return render(request, 'index.html', context)
+	return HttpResponse(json.dumps(retInfo))
